@@ -6,6 +6,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PeachIT.HRMLite.API.Seed;
+using PeachIT.HRMLite.BL;
+using PeachIT.HRMLite.Contracts;
 using PeachIT.HRMLite.DAL;
 using PeachIT.HRMLite.Domain;
 
@@ -27,6 +29,14 @@ namespace PeachIT.HRMLite.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddControllers();
+            //services.AddDbContextPool<HRMLiteContext>(options =>
+            //options.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings:HRMLiteApi")));
+            //services.AddScoped<IEmployeeService, EmployeeService>();
+
+
+
+
             services
                 .AddDbContext<HRMLiteContext>(options =>
                 {

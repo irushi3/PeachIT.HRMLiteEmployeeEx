@@ -3,33 +3,182 @@ using Microsoft.Extensions.Logging;
 using PeachIT.HRMLite.Contracts;
 using PeachIT.HRMLite.Models;
 using System.Collections.Generic;
+using System;
+using System.Threading.Tasks;
+using PeachIT.HRMLite.Domain;
+using Microsoft.AspNetCore.Http;
+using PeachIT.HRMLite.BL;
 
 namespace PeachIT.HRMLite.API.Controllers
 {
     [ApiController]
+    //[Route("api/[controller]")]
     [Route("[controller]")]
+
     public class EmployeeController : ControllerBase
     {
         private readonly ILogger<EmployeeController> _logger;
-        private readonly IEmployeeService employeeService;
+        private readonly IEmployeeService _employeeService;
 
         public EmployeeController(ILogger<EmployeeController> logger, IEmployeeService employeeService)
         {
             _logger = logger;
-            this.employeeService = employeeService;
+            //this.employeeService = employeeService;
+            _employeeService = employeeService;
         }
+
 
         [HttpGet]
-        public IEnumerable<EmployeeModel> Get()
+        //[Route("[controller]")]
+        //[Route("api/Employee/GetEmployees")]
+        public IEnumerable<Employee> GetEmployees()
         {
-            return employeeService.GetEmployees();
+            return _employeeService.GetEmployees();
         }
 
+
         [HttpPost]
-        public int SaveEmployee([FromBody] EmployeeModel employeeModel)
+        //[Route("[controller]")]
+        //[Route("api/Employee/AddEmployee")]
+        public IActionResult AddEmployee(Employee employee)
         {
-            return employeeService.SaveEmployee(employeeModel);
+            _employeeService.AddEmployee(employee);
+            return Ok();
         }
+
+
+        [HttpPut]
+        //[Route("[controller")]
+        //[Route("api/Employee/UpdateEmployee")]
+        public IActionResult UpdateEmployee(Employee employee)
+        {
+            _employeeService.UpdateEmployee(employee);
+            return Ok();
+        }
+
+        //[HttpPut]
+        ////[Route("[controller]")]
+        ////[Route("api/Employee/DeleteEmployee")]
+        //public IActionResult UpdateEmployee(int id)
+        //{
+        //    var existingEmployee = _employeeService.GetEmployee(id);
+        //    if (existingEmployee != null)
+        //    {
+        //        _employeeService.UpdateEmployee(existingEmployee.Id);
+        //        return Ok();
+        //    }
+        //    return NotFound($"Employee not found with ID : {existingEmployee.Id}");
+        //}
+
+
+        [HttpDelete]
+        //[Route("[controller]")]
+        //[Route("api/Employee/DeleteEmployee")]
+        public IActionResult DeleteEmployee(int id)
+        {
+            var existingEmployee = _employeeService.GetEmployee(id);
+            if (existingEmployee != null)
+            {
+                _employeeService.DeleteEmployee(existingEmployee.Id);
+                return Ok();
+            }
+            return NotFound($"Employee not found with ID : {existingEmployee.Id}");
+        }
+
+
+        [HttpGet]
+        //[Route("GetEmployee")]
+        public Employee GetEmployee(int id)
+        {
+            return _employeeService.GetEmployee(id);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //[HttpGet("{id}")]
+        //public ActionResult<Employee> Get(int id)
+        //{
+        //    var employee = EmployeeService.Get(id);
+
+        //    if (employee == null)
+        //        return NotFound();
+
+        //    return employee;
+        //}
+
+        //[HttpPost]
+        //public int SaveEmployee([FromBody] EmployeeModel employeeModel)
+        //{
+        //    return employeeService.SaveEmployee(employeeModel);
+        //}
+
+        //[HttpPost]
+        //public IActionResult Create(Employee employee)
+        //{
+        //    EmployeeService.Add(employee);
+        //    return CreatedAtAction(nameof(Create), new { id = employee.Id }, employee);
+        //}
+
+
+        //[HttpPut("{id}")]
+        //public IActionResult UpdateEmployee(int id, Employee employee)
+        //{
+        //    if (id != employee.Id)
+        //        return BadRequest();
+
+        //    var existingPizza = EmployeeService.Get(id);
+        //    if (existingPizza is null)
+        //        return NotFound();
+
+        //    EmployeeService.UpdateEmployee(employee);
+
+        //    return NoContent();
+        //}
+
+
+        //[HttpDelete("{id}")]
+        //public IActionResult DeleteEmployee(int id)
+        //{
+        //    var employee = EmployeeService.Get(id);
+
+        //    if (employee is null)
+        //        return NotFound();
+
+        //    EmployeeService.DeleteEmployee(id);
+
+        //    return NoContent();
+        //}
+
+
+        //[HttpDelete("{id}")]
+        //public ActionResult DeleteEmployee(int id)
+        //{
+        //    var employee = employeeService.GetEmployees(id);
+
+        //    if (employee is null)
+        //        return NotFound();
+
+        //    EmployeeService.DeleteEmployee(id);
+
+        //    return NoContent();
+        //}
+
+
     }
 }
 

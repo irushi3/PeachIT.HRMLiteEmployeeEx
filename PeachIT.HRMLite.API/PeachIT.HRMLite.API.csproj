@@ -27,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Controllers\DepartmentsController.cs~RF145d2e38.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\PeachIT.HRMLite.Contracts\PeachIT.HRMLite.Contracts.csproj" />
     <ProjectReference Include="..\PeachIT.HRMLite.DAL\PeachIT.HRMLite.DAL.csproj" />
     <ProjectReference Include="..\PeachIT.HRMLite.Infrastructure\PeachIT.HRMLite.Infrastructure.csproj" />

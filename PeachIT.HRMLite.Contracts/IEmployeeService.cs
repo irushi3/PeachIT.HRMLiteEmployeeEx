@@ -16,7 +16,7 @@ namespace PeachIT.HRMLite.Contracts
 
         Employee AddEmployee(Employee employee);
 
-        List<Employee> GetEmployees();
+        List<Employee> GetEmployee();
 
         void UpdateEmployee(Employee employee);
 

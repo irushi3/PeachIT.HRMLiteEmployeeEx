@@ -1,26 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PeachIT.HRMLite.Contracts;
-using PeachIT.HRMLite.Models;
 using System.Collections.Generic;
-using System;
-using System.Threading.Tasks;
 using PeachIT.HRMLite.Domain;
-using Microsoft.AspNetCore.Http;
-using PeachIT.HRMLite.BL;
+
 
 namespace PeachIT.HRMLite.API.Controllers
 {
     [ApiController]
-    //[Route("api/[controller]")]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
+    //[Route("[controller]")]
 
-    public class EmployeeController : ControllerBase
+    public class EmployeesController : ControllerBase
     {
-        private readonly ILogger<EmployeeController> _logger;
+        private readonly ILogger<EmployeesController> _logger;
         private readonly IEmployeeService _employeeService;
 
-        public EmployeeController(ILogger<EmployeeController> logger, IEmployeeService employeeService)
+        public EmployeesController(ILogger<EmployeesController> logger, IEmployeeService employeeService)
         {
             _logger = logger;
             //this.employeeService = employeeService;
@@ -28,18 +24,18 @@ namespace PeachIT.HRMLite.API.Controllers
         }
 
 
-        [HttpGet]
+        [HttpGet("{id:int}")]
         //[Route("[controller]")]
-        //[Route("api/Employee/GetEmployees")]
-        public IEnumerable<Employee> GetEmployees()
+        [Route("GetEmployee/{id?}")]
+        public IEnumerable<Employee> GetEmployee(int id)
         {
-            return _employeeService.GetEmployees();
+            return _employeeService.GetEmployee();
         }
 
 
         [HttpPost]
         //[Route("[controller]")]
-        //[Route("api/Employee/AddEmployee")]
+        [Route("AddEmployee")]
         public IActionResult AddEmployee(Employee employee)
         {
             _employeeService.AddEmployee(employee);
@@ -49,7 +45,7 @@ namespace PeachIT.HRMLite.API.Controllers
 
         [HttpPut]
         //[Route("[controller")]
-        //[Route("api/Employee/UpdateEmployee")]
+        [Route("UpdateEmployee")]
         public IActionResult UpdateEmployee(Employee employee)
         {
             _employeeService.UpdateEmployee(employee);
@@ -73,7 +69,7 @@ namespace PeachIT.HRMLite.API.Controllers
 
         [HttpDelete]
         //[Route("[controller]")]
-        //[Route("api/Employee/DeleteEmployee")]
+        [Route("DeleteEmployee")]
         public IActionResult DeleteEmployee(int id)
         {
             var existingEmployee = _employeeService.GetEmployee(id);
@@ -86,12 +82,14 @@ namespace PeachIT.HRMLite.API.Controllers
         }
 
 
-        [HttpGet]
+        //[HttpGet("{id:int}")]
         //[Route("GetEmployee")]
-        public Employee GetEmployee(int id)
-        {
-            return _employeeService.GetEmployee(id);
-        }
+        //[Route("GetEmployee/{id?}")]
+        //public Employee GetEmployee(int id)
+        //{
+        //    return _employeeService.GetEmployee(id);
+            
+        //}
 
 
 

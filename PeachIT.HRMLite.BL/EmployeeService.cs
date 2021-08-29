@@ -67,10 +67,15 @@ namespace PeachIT.HRMLite.BL
         }
 
 
-        public Employee GetEmployee(int id)
+        public Employee GetEmployee(int? id)
         {
             return _context.Employees.FirstOrDefault(x => x.Id == id);
         }
+
+        //public List<Employee> GetEmployee(int? id)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
 
 

@@ -22,7 +22,7 @@ namespace PeachIT.HRMLite.Contracts
 
         void DeleteEmployee(int Id);
 
-        Employee GetEmployee(int Id);
+        Employee GetEmployee(int? id);
 
 
     }

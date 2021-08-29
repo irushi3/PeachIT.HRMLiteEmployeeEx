@@ -24,12 +24,12 @@ namespace PeachIT.HRMLite.API.Controllers
         }
 
 
-        [HttpGet("{id:int}")]
+        [HttpGet]
         //[Route("[controller]")]
         [Route("GetEmployee/{id?}")]
-        public IEnumerable<Employee> GetEmployee(int id)
+        public IEnumerable<Employee> GetEmployee(int? id)
         {
-            return _employeeService.GetEmployee();
+            return (IEnumerable<Employee>)_employeeService.GetEmployee(id);
         }
 
 

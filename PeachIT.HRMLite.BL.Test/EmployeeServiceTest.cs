@@ -28,19 +28,19 @@ namespace PeachIT.HRMLite.BL.Test
             result.Should().BeOfType<List<EmployeeModel>>();
         }
 
-        [Test]
-        public void SaveEmployee_WithValidModel_ShouldAddUserSurvey()
-        {
-            var employeeName = Guid.NewGuid().ToString();
-            var result = service.SaveEmployee(new EmployeeModel()
-            {
-                Name = employeeName,
-                Address = Guid.NewGuid().ToString()
-            });
+        //[Test]
+        //public void SaveEmployee_WithValidModel_ShouldAddUserSurvey()
+        //{
+        //    var employeeName = Guid.NewGuid().ToString();
+        //    var result = service.SaveEmployee(new EmployeeModel()
+        //    {
+        //        Name = employeeName,
+        //        Address = Guid.NewGuid().ToString()
+        //    });
             
 
-            var employee = context.Employees.First<Employee>(p => p.Name == employeeName);
-            employee.Should().NotBeNull();
-        }
+        //    var employee = context.Employees.First<Employee>(p => p.Name == employeeName);
+        //    employee.Should().NotBeNull();
+        //}
     }
 }

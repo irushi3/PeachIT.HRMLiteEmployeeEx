@@ -12,8 +12,8 @@ using PeachIT.HRMLite.BL;
 namespace PeachIT.HRMLite.API.Controllers
 {
     [ApiController]
-    //[Route("api/[controller]")]
-    [Route("[controller]")]
+    [Route("api/Employee")]
+    //[Route("[controller]")]
 
     public class EmployeeController : ControllerBase
     {
@@ -31,6 +31,7 @@ namespace PeachIT.HRMLite.API.Controllers
         [HttpGet]
         //[Route("[controller]")]
         //[Route("api/Employee/GetEmployees")]
+        [Route("GetEmployees")]
         public IEnumerable<Employee> GetEmployees()
         {
             return _employeeService.GetEmployees();
@@ -40,54 +41,43 @@ namespace PeachIT.HRMLite.API.Controllers
         [HttpPost]
         //[Route("[controller]")]
         //[Route("api/Employee/AddEmployee")]
+        [Route("AddEmployee")]
         public IActionResult AddEmployee(Employee employee)
         {
             _employeeService.AddEmployee(employee);
-            return Ok();
+            return Ok("Added Sucessfully!");
         }
 
 
         [HttpPut]
         //[Route("[controller")]
         //[Route("api/Employee/UpdateEmployee")]
+        [Route("UpdateEmployee")]
         public IActionResult UpdateEmployee(Employee employee)
         {
             _employeeService.UpdateEmployee(employee);
-            return Ok();
+            return Ok("Updated Successfully!");
         }
-
-        //[HttpPut]
-        ////[Route("[controller]")]
-        ////[Route("api/Employee/DeleteEmployee")]
-        //public IActionResult UpdateEmployee(int id)
-        //{
-        //    var existingEmployee = _employeeService.GetEmployee(id);
-        //    if (existingEmployee != null)
-        //    {
-        //        _employeeService.UpdateEmployee(existingEmployee.Id);
-        //        return Ok();
-        //    }
-        //    return NotFound($"Employee not found with ID : {existingEmployee.Id}");
-        //}
 
 
         [HttpDelete]
         //[Route("[controller]")]
         //[Route("api/Employee/DeleteEmployee")]
+        [Route("DeleteEmployee")]
         public IActionResult DeleteEmployee(int id)
         {
             var existingEmployee = _employeeService.GetEmployee(id);
             if (existingEmployee != null)
             {
                 _employeeService.DeleteEmployee(existingEmployee.Id);
-                return Ok();
+                return Ok("Record Deleted!");
             }
             return NotFound($"Employee not found with ID : {existingEmployee.Id}");
         }
 
 
         [HttpGet]
-        //[Route("GetEmployee")]
+        [Route("GetEmployee")]
         public Employee GetEmployee(int id)
         {
             return _employeeService.GetEmployee(id);

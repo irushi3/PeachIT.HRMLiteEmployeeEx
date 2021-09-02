@@ -21,7 +21,6 @@ namespace PeachIT.HRMLite.BL
 
         public EmployeeService(HRMLiteContext context, IMapper mapper)
         {
-            //this.context = context;
             _context = context;
             this.mapper = mapper;
         }
@@ -46,16 +45,6 @@ namespace PeachIT.HRMLite.BL
             _context.SaveChanges();
         }
 
-        //public void UpdateEmployee(int id)
-        //{
-        //    var employee = _context.Employees.FirstOrDefault(x => x.Id == id);
-        //    if (employee != null)
-        //    {
-        //        _context.Update(employee);
-        //        _context.SaveChanges();
-        //    }
-        //}
-
         public void DeleteEmployee(int id)
         {
             var employee = _context.Employees.FirstOrDefault(x => x.Id == id);
@@ -65,7 +54,6 @@ namespace PeachIT.HRMLite.BL
                 _context.SaveChanges();
             }
         }
-
 
         public Employee GetEmployee(int id)
         {

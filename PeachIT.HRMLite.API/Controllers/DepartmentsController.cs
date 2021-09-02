@@ -28,7 +28,7 @@ namespace PeachIT.HRMLite.API.Controllers
         //[Route("api/Employee/GetEmployees")]
         public IEnumerable<Department> GetDepartments()
         {
-            return _departmentService.GetDepartment();
+            return _departmentService.GetDepartments();
         }
 
 

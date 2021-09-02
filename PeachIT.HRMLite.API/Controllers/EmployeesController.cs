@@ -30,7 +30,7 @@ namespace PeachIT.HRMLite.API.Controllers
         [Route("GetEmployees")]
         public IEnumerable<Employee> GetEmployees()
         {
-            return (IEnumerable<Employee>)_employeeService.GetEmployee(id);
+            return _employeeService.GetEmployee();
         }
 
 

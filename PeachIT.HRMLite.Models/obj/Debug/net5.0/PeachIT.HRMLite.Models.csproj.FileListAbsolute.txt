@@ -22,3 +22,15 @@ E:\PeachIT\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0
 E:\PeachIT\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.dll
 E:\PeachIT\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\ref\PeachIT.HRMLite.Models.dll
 E:\PeachIT\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.pdb
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\bin\Debug\net5.0\PeachIT.HRMLite.Models.deps.json
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\bin\Debug\net5.0\PeachIT.HRMLite.Models.dll
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\bin\Debug\net5.0\ref\PeachIT.HRMLite.Models.dll
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\bin\Debug\net5.0\PeachIT.HRMLite.Models.pdb
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.csproj.AssemblyReference.cache
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.AssemblyInfoInputs.cache
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.AssemblyInfo.cs
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.csproj.CoreCompileInputs.cache
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.dll
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\ref\PeachIT.HRMLite.Models.dll
+C:\Users\DIMESH\source\repos\September\Irushi\HRMLite-main (1)\HRMLite-main\PeachIT.HRMLite.Models\obj\Debug\net5.0\PeachIT.HRMLite.Models.pdb

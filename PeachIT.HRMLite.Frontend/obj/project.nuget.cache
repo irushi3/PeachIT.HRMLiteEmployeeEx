@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "Ts7mqvGynUpbsuaYYCKjj6n3BYPT8hgNjNBloprSgLKD55FmmCLLUTuC/10RDSUjgue6L/b0OaaSh0yRdGLjkg==",
+  "success": true,
+  "projectFilePath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Frontend\\PeachIT.HRMLite.Frontend.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Irushi\\.nuget\\packages\\microsoft.aspnetcore.spaservices.extensions\\5.0.9\\microsoft.aspnetcore.spaservices.extensions.5.0.9.nupkg.sha512",
+    "C:\\Users\\Irushi\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\5.0.0\\microsoft.extensions.fileproviders.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Irushi\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\5.0.0\\microsoft.extensions.fileproviders.physical.5.0.0.nupkg.sha512",
+    "C:\\Users\\Irushi\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\5.0.0\\microsoft.extensions.filesystemglobbing.5.0.0.nupkg.sha512",
+    "C:\\Users\\Irushi\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

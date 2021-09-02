@@ -768,19 +768,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Irushi\\.nuget\\packages\\": {}
+    "C:\\Users\\DIMESH\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\PeachIT.HRMLite.BL.csproj",
+      "projectUniqueName": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\PeachIT.HRMLite.BL.csproj",
       "projectName": "PeachIT.HRMLite.BL",
-      "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\PeachIT.HRMLite.BL.csproj",
-      "packagesPath": "C:\\Users\\Irushi\\.nuget\\packages\\",
-      "outputPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\obj\\",
+      "projectPath": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\PeachIT.HRMLite.BL.csproj",
+      "packagesPath": "C:\\Users\\DIMESH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Irushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DIMESH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -794,14 +794,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj"
+            "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj": {
+              "projectPath": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj"
             },
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj"
+            "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj": {
+              "projectPath": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj"
             },
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj"
+            "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj": {
+              "projectPath": "C:\\Users\\DIMESH\\source\\repos\\September\\Irushi\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj"
             }
           }
         }
@@ -836,7 +836,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

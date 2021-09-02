@@ -1,13 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PeachIT.HRMLite.Contracts;
-using PeachIT.HRMLite.Models;
 using System.Collections.Generic;
-using System;
-using System.Threading.Tasks;
 using PeachIT.HRMLite.Domain;
-using Microsoft.AspNetCore.Http;
-using PeachIT.HRMLite.BL;
+
 
 namespace PeachIT.HRMLite.API.Controllers
 {
@@ -15,12 +11,12 @@ namespace PeachIT.HRMLite.API.Controllers
     [Route("api/Employee")]
     //[Route("[controller]")]
 
-    public class EmployeeController : ControllerBase
+    public class EmployeesController : ControllerBase
     {
-        private readonly ILogger<EmployeeController> _logger;
+        private readonly ILogger<EmployeesController> _logger;
         private readonly IEmployeeService _employeeService;
 
-        public EmployeeController(ILogger<EmployeeController> logger, IEmployeeService employeeService)
+        public EmployeesController(ILogger<EmployeesController> logger, IEmployeeService employeeService)
         {
             _logger = logger;
             //this.employeeService = employeeService;
@@ -34,7 +30,7 @@ namespace PeachIT.HRMLite.API.Controllers
         [Route("GetEmployees")]
         public IEnumerable<Employee> GetEmployees()
         {
-            return _employeeService.GetEmployees();
+            return (IEnumerable<Employee>)_employeeService.GetEmployee(id);
         }
 
 

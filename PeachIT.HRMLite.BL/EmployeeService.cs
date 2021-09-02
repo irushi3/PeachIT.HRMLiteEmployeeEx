@@ -32,7 +32,7 @@ namespace PeachIT.HRMLite.BL
             return employee;
         }
 
-        public List<Employee> GetEmployees()
+        public List<Employee> GetEmployee()
         {
             //var employees = context.Employees.ToList();
             //return mapper.Map<List<EmployeeModel>>(employees);
@@ -59,6 +59,11 @@ namespace PeachIT.HRMLite.BL
         {
             return _context.Employees.FirstOrDefault(x => x.Id == id);
         }
+
+        //public List<Employee> GetEmployee(int? id)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
 
 

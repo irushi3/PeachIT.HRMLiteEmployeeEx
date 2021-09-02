@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using PeachIT.HRMLite.Contracts;
 using PeachIT.HRMLite.DAL;
 using PeachIT.HRMLite.Domain;
+using PeachIT.HRMLite.DAL;
+using AutoMapper;
+
 
 namespace PeachIT.HRMLite.BL
 {
-    public class DepartmentService : IDepartmentService
+   public class DepartmentService : IDepartmentService
     {
         //private readonly HRMLiteContext context;
         private readonly IMapper mapper;
@@ -19,6 +23,7 @@ namespace PeachIT.HRMLite.BL
 
         public DepartmentService(HRMLiteContext context, IMapper mapper)
         {
+            //this.context = context;
             _context = context;
             this.mapper = mapper;
         }
@@ -43,6 +48,16 @@ namespace PeachIT.HRMLite.BL
             _context.SaveChanges();
         }
 
+        //public void UpdateEmployee(int id)
+        //{
+        //    var employee = _context.Employees.FirstOrDefault(x => x.Id == id);
+        //    if (employee != null)
+        //    {
+        //        _context.Update(employee);
+        //        _context.SaveChanges();
+        //    }
+        //}
+
         public void DeleteDepartment(int id)
         {
             var department = _context.Departments.FirstOrDefault(x => x.Id == id);
@@ -52,6 +67,7 @@ namespace PeachIT.HRMLite.BL
                 _context.SaveChanges();
             }
         }
+
 
         public Department GetDepartment(int id)
         {

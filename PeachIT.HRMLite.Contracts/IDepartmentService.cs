@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 using PeachIT.HRMLite.Domain;
 using PeachIT.HRMLite.Models;
 
+
 namespace PeachIT.HRMLite.Contracts
 {
-    public interface IDepartmentService
+    public interface IDepartmentService 
     {
         Department AddDepartment(Department department);
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PeachIT.HRMLite.Models
 {
-    public class DepartmentModel
+   public class DepartmentModel
     {
         [Key]
         public int Id { get; set; }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PeachIT.HRMLite.Domain
 {
-    public class Department : BaseModel
+   public class Department : BaseModel
     {
         public string DepartmentName { get; set; }
         public int ContactNo { get; set; }

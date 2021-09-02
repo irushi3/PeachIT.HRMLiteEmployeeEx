@@ -6,16 +6,16 @@ export default class EmployeeList extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { business: [] };
+        this.state = { business: [], deleted: false };
+        
     }
     componentDidMount() {
-        debugger;
        /* axios.get('https://localhost:44378/api/Employee/GetEmployees')*/
         axios.get(' https://localhost:5001/api/employee/getemployees')
             .then(response => {
                 this.setState({ business: response.data });
                /* console.log(this.state.business)*/
-                debugger;
+                /*debugger;*/
 
             })
             .catch(function (error) {
@@ -23,12 +23,42 @@ export default class EmployeeList extends Component {
             })
     }
 
+    componentDidUpdate() {
+        if (this.state.deleted) {
+            axios.get(' https://localhost:5001/api/employee/getemployees')
+                .then(response => {
+                    this.setState({ business: response.data, deleted: false });
+                    /* console.log(this.state.business)*/
+                    /*debugger;*/
+
+                })
+                .catch(function (error) {
+                    console.log(error);
+                })
+        }
+    }
+
+    DeleteEmployee = (empId) => {
+        /*axios.delete('https://localhost:44378/api/Employee/DeleteEmployee?id=' + this.props.obj.Id)*/
+        axios.delete('https://localhost:5001/api/employee/deleteemployee?Id=' + empId)
+            .then(json => {
+                if (json.status === 200) {
+                    alert('Record deleted successfully!!');
+                    this.setState({ deleted: true })
+
+
+                    
+                }
+            })
+    }
+
     tabRow() {
         /*return this.state.business.map(function (object, i) {
             return <Table obj={object} key={i} />;
         });*/
-        const rows = this.state.business.map((row,i) => {
-            return <Table obj={row} key={i} />;
+        const rows = this.state.business.map((row, i) => {
+            return <Table obj={row} key={i} del={this.DeleteEmployee} />;
+
         })
 
         return rows;

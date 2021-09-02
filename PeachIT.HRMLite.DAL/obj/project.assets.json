@@ -548,11 +548,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj",
+      "projectUniqueName": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj",
       "projectName": "PeachIT.HRMLite.DAL",
-      "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj",
+      "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj",
       "packagesPath": "C:\\Users\\Irushi\\.nuget\\packages\\",
-      "outputPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\obj\\",
+      "outputPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Irushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -569,8 +569,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Domain\\PeachIT.HRMLite.Domain.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Domain\\PeachIT.HRMLite.Domain.csproj"
+            "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Domain\\PeachIT.HRMLite.Domain.csproj": {
+              "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Domain\\PeachIT.HRMLite.Domain.csproj"
             }
           }
         }

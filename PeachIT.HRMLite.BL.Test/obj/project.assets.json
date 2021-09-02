@@ -6543,11 +6543,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\PeachIT.HRMLite.BL.Test.csproj",
+      "projectUniqueName": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\PeachIT.HRMLite.BL.Test.csproj",
       "projectName": "PeachIT.HRMLite.BL.Test",
-      "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\PeachIT.HRMLite.BL.Test.csproj",
+      "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\PeachIT.HRMLite.BL.Test.csproj",
       "packagesPath": "C:\\Users\\Irushi\\.nuget\\packages\\",
-      "outputPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\obj\\",
+      "outputPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.BL.Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Irushi\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6564,17 +6564,17 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj"
+            "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj": {
+              "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Contracts\\PeachIT.HRMLite.Contracts.csproj"
             },
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj"
+            "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj": {
+              "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.DAL\\PeachIT.HRMLite.DAL.csproj"
             },
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Infrastructure\\PeachIT.HRMLite.Infrastructure.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Infrastructure\\PeachIT.HRMLite.Infrastructure.csproj"
+            "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Infrastructure\\PeachIT.HRMLite.Infrastructure.csproj": {
+              "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Infrastructure\\PeachIT.HRMLite.Infrastructure.csproj"
             },
-            "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj": {
-              "projectPath": "E:\\PeachIT\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj"
+            "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj": {
+              "projectPath": "C:\\winhe\\HRMLite-main (1)\\HRMLite-main\\PeachIT.HRMLite.Models\\PeachIT.HRMLite.Models.csproj"
             }
           }
         }

@@ -24,7 +24,7 @@ class AddEmployee extends React.Component {
                 }
                 else {
                     alert('Data not Saved');
-                    debugger;
+                   /* debugger;*/
                     this.props.history.push('/EmployeeList')
                 }
             })

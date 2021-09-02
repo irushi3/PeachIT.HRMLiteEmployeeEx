@@ -2,6 +2,7 @@
 import { Container, Col, Form, Row, FormGroup, Label, Input, Button } from 'reactstrap';
 import axios from 'axios'
 import '../Employee/AddEmployee.css'
+
 class Edit extends React.Component {
     constructor(props) {
         super(props)
@@ -45,25 +46,27 @@ class Edit extends React.Component {
     }
 
     onSubmit(e) {
-        debugger;
+       /* debugger;*/
         e.preventDefault();
         const obj = {
             Id: this.props.match.params.id,
-            Name: this.state.name,
-            Address: this.state.address
+            Name: this.state.Name,
+            Address: this.state.Address
 
         };
         /*axios.post('https://localhost:44378/api/Employee/UpdateEmployee', obj)*/
-        axios.post(' https://localhost:5001/api/employee/updateemployee', obj)
+        /*axios.post(' https://localhost:5001/api/employee/updateemployee', obj)*/
+        console.log(obj)
+        axios.put(' https://localhost:5001/api/employee/updateemployee/' , obj)
             .then(res => console.log(res.data));
-        debugger;
+        /* debugger;*/
         this.props.history.push('/EmployeeList')
     }
     render() {
         return (
             <Container className="App">
 
-                <h4 className="PageHeading">Update Employee Informations</h4>
+                <h4 className="PageHeading">Update Employee Information</h4>
                 <Form className="form" onSubmit={this.onSubmit}>
                     <Col>
                         <FormGroup row>
@@ -71,6 +74,7 @@ class Edit extends React.Component {
                             <Col sm={10}>
                                 <Input type="text" name="Name" value={this.state.Name} onChange={this.onChangeName}
                                     placeholder="Enter Name" />
+
                             </Col>
                         </FormGroup>
 
